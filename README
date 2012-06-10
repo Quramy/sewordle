@@ -1,0 +1,9 @@
+This Chrome extension generates a tag cloud image using keywords the user have inputed at search-engine websites.
+Featuered search engines are followings:
+Google, Yahoo, Bing
+
+This extension is powered by:
+d3.js, d3.cloud-layout
+colorbrewer,
+Twtter bootstrap,
+
