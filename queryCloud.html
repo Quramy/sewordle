@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<title>seWordle</title>
+		<link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link type="text/css" rel="stylesheet" href="./css/bootstrap-responsive.css" />
+		<link type="text/css" rel="stylesheet" href="./css/font-awesome.css" />
+		<link type="text/css" rel="stylesheet" href="./css/jquery-ui.css" />
+		<link rel="shortcut icon" href="./img/icons/icon_48.png" />
+		<script type="text/javascript" src="./js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="#">seWordle</a>
+					<!--
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+					</div>
+					-->
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id ="settings" class="span4">
+					<div class="well">
+						<h3><i class="icon-wrench"></i> settings</h3>
+						<label>Image size:</label>
+						<input id="width" type="number" value="850" class="span1" />
+						x
+						<input id="height" type="number" value="600" class="span1" />
+
+						<label>Number of words:</label>
+						<input id="count" type="number" value="150" class="span1" />
+
+						<label>Font:</label>
+						<div name="font-family" id="font-family" class="btn-group">
+							<button id="font" class="btn">Impact</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown">
+								<span class="caret"></span>
+							</button>
+							<ul id="font-list" class="dropdown-menu">
+								<!--
+								<li><a href="#">Impact</a></li>
+								<li><a href="#">Arial Black</a></li>
+								-->
+							</ul>
+						</div>
+
+						<label>Color set:</label>
+						<div id="filler-set" class="btn-group">
+							<button id="filler" class="btn">Random</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown">
+								<span class="caret"></span>
+							</button>
+							<ul id="color-list" class="dropdown-menu">
+								<li><a href="#">Random</a></li>
+								<li><a href="#">Blue</a></li>
+								<li><a href="#">Red</a></li>
+								<li><a href="#">Green</a></li>
+								<li><a href="#">Orange</a></li>
+								<li><a href="#">Purple</a></li>
+								<li><a href="#">Grey</a></li>
+							</ul>
+						</div>
+
+						<label>Direction of words:</label>
+						<div id="rotator" class="btn-group" data-toggle="buttons-radio">
+							<button class="btn" data-rotate-type="horizontal">flat</button>
+							<button class="btn active" data-rotate-type="cross">cross</button>
+							<button class="btn" data-rotate-type="analog">random</button>
+						</div>
+						<hr />
+						<a id="generate" class="btn btn-primary btn-large"><i class="icon-play icon-white"></i> go wordle</a>
+						<a id="getpng" target="blank" class="btn disabled">get .png file</a>
+					</div>
+				</div> <!-- /#settings -->
+
+				<div class="span8">
+					<div id="cloud" >
+					<!--
+						<div id ="progress" class="progress">
+							<div class="bar" style="width: 0%;"></div>
+						</div>
+					-->
+					<div id="progress" style="position:relative;"></div>
+					</div>
+				</div>
+
+			</div>
+			<hr/>
+			<footer>
+			<p>&copy; Company 2012</p>
+			</footer>
+		</div> <!-- end container -->
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/colorbrewer.js"></script>
+		<script src="./js/d3.js"></script>
+		<script src="./js/d3.layout.cloud.js"></script>
+		<script src="./js/queryCloud.js"></script>
+	</body>
+</html>
+
